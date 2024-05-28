@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Joyería Encantada</title>
+
+        <!--  para la letra-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=PT+Serif:wght@400;700&display=swap" rel="stylesheet"> 
+
+        <!--  para los íconos-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Bootstrap  -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- css -->
+        <link href="css/style.css" rel="stylesheet">
+
+        <!-- JavaScript -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="js/main.js"></script>
+
+
+    </head>
+
+    <body>
+
+        <!-- Spinner -->
+        <div id="spinner" class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50  d-flex align-items-center justify-content-center">
+            <div class="spinner-grow text-primary" role="status"></div>
+        </div>
+        <!-- Spinner -->
+
+
+        <!-- header  -->
+        <div class="container-fluid sticky-top px-0">
+            <div class="container-fluid topbar d-none d-lg-block">
+                <div class="container px-0">
+                    <div class="row align-items-center">
+                        <div class="col-lg-8">
+                            <div class="d-flex flex-wrap">
+                                <a href="#" class="me-4 text-light"><i class="fas fa-map-marker-alt text-primary me-2"></i>Neiva-Huila</a>
+                                <a href="#" class="me-4 text-light"><i class="fas fa-phone-alt text-primary me-2"></i>3136629224</a>
+                                <a href="#" class="text-light"><i class="fas fa-envelope text-primary me-2"></i>joyeriaEncantada1@gmail.com</a>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="d-flex align-items-center justify-content-end">
+                                <a href="https://www.facebook.com" class="me-3 btn-square border rounded-circle nav-fill"><i class="fab fa-facebook-f"></i></a>
+                                <a href="https://wwww.twitter.com" class="me-3 btn-square border rounded-circle nav-fill"><i class="fab fa-twitter"></i></a>
+                                <a href="https://www.instagram.com" class="me-3 btn-square border rounded-circle nav-fill"><i class="fab fa-instagram"></i></a>
+                                <a href="https://www.tiktok.com" class="btn-square border rounded-circle nav-fill"><i class="fab fa-tiktok"></i></a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid bg-light">
+                <div class="container px-0">
+                    <nav class="navbar navbar-light navbar-expand-xl">
+                        <a href="inicio.html" class="navbar-brand">
+                            <h3 class="text-primary display-4">Joyería Encantada</h3>
+                        </a>
+                        <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                            <span class="fa fa-bars text-primary"></span>
+                        </button>
+                        <div class="collapse navbar-collapse bg-light py-3" id="navbarCollapse">
+                            <div class="navbar-nav mx-auto border-top">
+                                <a href="inicio.html" class="nav-item nav-link active">Inicio</a>
+                                <a href="sobre-nosotros.html" class="nav-item nav-link">Sobre Nosotros</a>
+                                <a href="catalogo.html" class="nav-item nav-link">Catálogo</a>
+                                <a href="clientas.html" class="nav-item nav-link">Clientes</a>
+                                <a href="contactanos.html" class="nav-item nav-link">Contáctanos</a>
+                            </div>
+                            <div class="iconos">
+                                <div class="icon-container">
+                                    <i class="fas fa-heart" id="favorites-icon"></i>
+                                    <span id="favorites-count" class="icon-count">0</span>
+                                </div>
+                                <div class="icon-container">
+                                    <i class="fas fa-shopping-cart" id="cart-icon"></i>
+                                    <span id="cart-count" class="icon-count">0</span>
+                                </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!-- header -->
+        <br>
+        <!-- testimonios -->
+        <div class="container-fluid testimonios py-5">
+            <div class="container py-5">
+                <div class="text-center mx-auto mb-5" style="max-width: 800px;">
+                    <p class="fs-4 text-uppercase text-primary">Testimonios</p>
+                    <h1 class="display-4 mb-4 text-white">¿Qué dicen nuestras clientas?</h1>
+                </div>
+                <div class="owl-carousel testimonios-carousel">
+                    <div class="testimonios-item rounded p-4">
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="d-flex flex-column mx-auto">
+                                    <div class="rounded-circle mb-4" style="border: dashed; border-color: var(--bs-white);">
+                                        <img src="img/clienta-1.jpg" class="img-fluid rounded-circle" alt="">
+                                    </div>
+                                    <div class="text-center">
+                                        <h4 class="mb-2 text-primary">Geina</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-8">
+                                <div class="position-absolute" style="top: 20px; right: 25px;">
+                                    <i class="fa fa-quote-right fa-2x text-secondary"></i>
+                                </div>
+                                <div class="testimonios-content">
+                                    <div class="d-flex mb-4">
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <p class="fs-5 mb-0 text-white">Las joyas son preciosas y la atención es de primera. ¡Me encanta mi nueva pulsera personalizada!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonios-item rounded p-4">
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="d-flex flex-column mx-auto">
+                                    <div class="rounded-circle mb-4" style="border: dashed; border-color: var(--bs-white);">
+                                        <img src="img/clienta-4.png" class="img-fluid rounded-circle" alt="">
+                                    </div>
+                                    <div class="text-center">
+                                        <h4 class="mb-2 text-primary">Laura</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-8">
+                                <div class="position-absolute" style="top: 20px; right: 25px;">
+                                    <i class="fa fa-quote-right fa-2x text-secondary"></i>
+                                </div>
+                                <div class="testimonios-content">
+                                    <div class="d-flex mb-4">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <p class="fs-5 mb-0 text-white">No recomendaría Joyería Encantada a nadie. Las joyas que vi parecían de baja calidad 
+                                        y el servicio al cliente dejó mucho que desear.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonios-item rounded p-4">
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="d-flex flex-column mx-auto">
+                                    <div class="rounded-circle mb-4" style="border: dashed; border-color: var(--bs-white);">
+                                        <img src="img/cliente-2.jpg" class="img-fluid rounded-circle" alt="">
+                                    </div>
+                                    <div class="text-center">
+                                        <h4 class="mb-2 text-primary">Aleja</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-8">
+                                <div class="position-absolute" style="top: 20px; right: 25px;">
+                                    <i class="fa fa-quote-right fa-2x text-secondary"></i>
+                                </div>
+                                <div class="testimonios-content">
+                                    <div class="d-flex mb-4">
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                    </div>
+                                    <p class="fs-5 mb-0 text-white">Servicio excepcional y diseños únicos. Siempre encuentro algo especial en cada visita.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonios-item rounded p-4">
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="d-flex flex-column mx-auto">
+                                    <div class="rounded-circle mb-4" style="border: dashed; border-color: var(--bs-white);">
+                                        <img src="img/cliente-3.jpg" class="img-fluid rounded-circle" alt="">
+                                    </div>
+                                    <div class="text-center">
+                                        <h4 class="mb-2 text-primary">Caro</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-8">
+                                <div class="position-absolute" style="top: 20px; right: 25px;">
+                                    <i class="fa fa-quote-right fa-2x text-secondary"></i>
+                                </div>
+                                <div class="testimonios-content">
+                                    <div class="d-flex mb-4">
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                    </div>
+                                    <p class="fs-5 mb-0 text-white">Estoy encantada con mi collar de iniciales. ¡Recomiendo esta joyería a todas mis amigas!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonios-item rounded p-4">
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="d-flex flex-column mx-auto">
+                                    <div class="rounded-circle mb-4" style="border: dashed; border-color: var(--bs-white);">
+                                        <img src="img/clienta-5.png" class="img-fluid rounded-circle" alt="">
+                                    </div>
+                                    <div class="text-center">
+                                        <h4 class="mb-2 text-primary">Mayra</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-8">
+                                <div class="position-absolute" style="top: 20px; right: 25px;">
+                                    <i class="fa fa-quote-right fa-2x text-secondary"></i>
+                                </div>
+                                <div class="testimonios-content">
+                                    <div class="d-flex mb-4">
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <p class="fs-5 mb-0 text-white">Me sentí decepcionada con la selección de joyas en Joyería Encantada. No encontré nada 
+                                        que me llamara la atención, y el personal no fue muy útil ni servicial en mi búsqueda.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonios-item rounded p-4">
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="d-flex flex-column mx-auto">
+                                    <div class="rounded-circle mb-4" style="border: dashed; border-color: var(--bs-white);">
+                                        <img src="img/clienta-6.png" class="img-fluid rounded-circle" alt="">
+                                    </div>
+                                    <div class="text-center">
+                                        <h4 class="mb-2 text-primary">Zuly</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-8">
+                                <div class="position-absolute" style="top: 20px; right: 25px;">
+                                    <i class="fa fa-quote-right fa-2x text-secondary"></i>
+                                </div>
+                                <div class="testimonios-content">
+                                    <div class="d-flex mb-4">
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <p class="fs-5 mb-0 text-white">Mi experiencia en Joyería Encantada fue bastante negativa. La atención al cliente 
+                                        fue pobre y poco profesional, y las joyas que vi no cumplían con mis expectativas en términos de calidad y diseño.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Testimonios-->
+        <br>
+        <!-- Footer -->
+        <footer class="text-white py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h5>Información de contacto</h5>
+                        <p><i class="fas fa-map-marker-alt"></i> Centro Comercial Unicentro</p>
+                        <p><i class="fas fa-phone-alt"></i> 3136629224</p>
+                        <p><i class="fas fa-envelope"></i> joyeriaEncantada1@gmail.com</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h5>Horario de atención</h5>
+                        <p>Lunes - Viernes: 9:00 am - 8:00 pm</p>
+                        <p>Sábado: 10:00 am - 6:00 pm</p>
+                        <p>Domingo: Cerrado</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h5>Síguenos en redes sociales</h5>
+                        <div class="social-links">
+                            <a href="https://www.facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.tiktok.com" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-3">
+                <p>&copy; 2024 Joyería Encantada. Todos los derechos reservados.</p>
+            </div>
+        </footer>
+        <!-- Footer -->
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-primary btn-primary-outline-0 btn-md-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>   
+
+    </body>
+
+</html>
